@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="decodesaml" version="SHA-512:6baaf85208c927adc600bf3a651e00e90c4dc489fa5d5c15b1deefe49470cb49e656fa56e279c907429b3b09d1c35fa5be64cd5b3ec39950ace79bc740b55531"/>
+        <VersionInfo resourceName="set-response-json" version="SHA-512:4eca7463ae2c85e1dad71cac5e1b026eb1983efbbc5392c899fd6bf401a764799915eec15de50aff93e29ab25671ebd37d44f8fb0755356a8229f44858039172"/>
+        <VersionInfo resourceName="set-response-xml" version="SHA-512:453f9a4cc2f2ec190d08adb1b35c53ac6f75f741672ac57bc4f99b81d7e795aa0a2a6c32cd3a92eb9db50b92f1924ea92e6ff44ce571c5e9836a2acceb457de3"/>
+        <VersionInfo resourceName="validate-saml" version="SHA-512:2eab032fbb2a26d19bbdb6749aa0adcc0764e5f2c9a736f1de6a4ec8564d47c6f26c9f4558770a449696f098c60ef6561615ffaf55caebe9ec1b6acfe3c825c0"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:6d45a62bfb908ba852f04b68239d564919c158591bb471fdb630db8924aa8d752092afcd912db71f171bce9d42109374e1d2ab91aca4d717bbcb0822aa29480d"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://decodesaml.js" version="SHA-512:add94c7d29d1bfe40642b2ea1a7be275cca5890a8bde2f6661ba58a155df4cb089f76a2af0c0dbf9f4fc7b16bdf9d3443bca9d852fde84af9dd34ab8745a1c15"/>
+        <VersionInfo resourceName="jsc://samlhelper.js" version="SHA-512:1b2acf7daa3cbf2031edf7b96a98652ce72d2578a2d5f824621bf89101bfcea19b3dba4945c2e0eed80f1bb2d2b02d7d1bb2cbad6812abb24f7c5727a037e917"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

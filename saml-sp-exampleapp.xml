@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="6" name="saml-sp-exampleapp">
+    <Basepaths>/exampleapp/saml/sso</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1523985474232</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>Demonstrates SAML authentication using the Google as the IdP. Login URL: https://accounts.google.com/AddSession?continue=https%3A%2F%2Fapps.google.com%2Fuser%2Fhub&amp;sacu=1&amp;ignoreShadow=0#Email=johnsmith%40admin.altostrat.com Username: johnsmith@admin.altostrat.com Password: Apigee@123</Description>
+    <DisplayName>saml-sp-exampleapp</DisplayName>
+    <LastModifiedAt>1523990407479</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:d6b7fd230ebd72c6fc9bf1f40edfd5b36b27173c6df04f0fa41e084a1d7816e22e9ec3d5b9999f717d579f9fc5148b856bef4cea335778efa6a1f57e5d9ce0e4</ManifestVersion>
+    <Policies>
+        <Policy>decodesaml</Policy>
+        <Policy>set-response-json</Policy>
+        <Policy>set-response-xml</Policy>
+        <Policy>validate-saml</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://decodesaml.js</Resource>
+        <Resource>jsc://samlhelper.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

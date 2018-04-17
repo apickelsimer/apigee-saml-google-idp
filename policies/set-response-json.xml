@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="set-response-json">
+    <DisplayName>set-response-json</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload type="application/json">{
+    "status":"success",
+    "saml": {
+        "valid" : "{saml.valid}",
+        "id":"{saml.id}",
+        "issuer":"{saml.issuer}",
+        "issueInstant":"{saml.issueInstant}",
+        "subject":"{saml.subject}",
+        "subjectFormat":"{saml.subjectFormat}",
+        "scmethod":"{saml.scmethod}",
+        "scdrcpt":"{saml.scdrcpt}",
+        "authnContextClassRef":"{saml.authnContextClassRef}",
+        "authnInstant":"{saml.authnInstant}",
+        "authnSessionIndex":"{saml.authnSessionIndex}"
+    }
+}</Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="set-response-xml">
+    <DisplayName>set-response-xml</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload type="application/xml">
+            <root>
+                <saml>
+                    <authnContextClassRef>{saml.authnContextClassRef}</authnContextClassRef>
+                    <authnInstant>{saml.authnInstant}</authnInstant>
+                    <authnSessionIndex>{saml.authnSessionIndex}</authnSessionIndex>
+                    <id>{saml.id}</id>
+                    <issueInstant>{saml.issueInstant}</issueInstant>
+                    <issuer>{saml.issuer}</issuer>
+                    <scdrcpt>{saml.scdrcpt}</scdrcpt>
+                    <scmethod>{saml.scmethod}</scmethod>
+                    <subject>{saml.subject}</subject>
+                    <subjectFormat>{saml.subjectFormat}</subjectFormat>
+                    <valid>{saml.valid}</valid>
+                </saml>
+                <status>success</status>
+            </root>
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
